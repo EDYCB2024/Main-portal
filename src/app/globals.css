@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #041627;
+  --color-primary-container: #1a2b3c;
+  --color-on-primary-container: #8192a7;
+  
+  --color-secondary: #505f76;
+  --color-secondary-container: #d0e1fb;
+  
+  --color-surface: #f7f9fb;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container-highest: #e0e3e5;
+  --color-surface-container-lowest: #ffffff;
+  
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #44474c;
+  
+  --color-outline: #74777d;
+  --color-outline-variant: #c4c6cd;
+
+  --font-inter: "Inter", sans-serif;
+  
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}
+
+:root {
+  --background: #f7f9fb;
+  --foreground: #191c1e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #041627;
+    --foreground: #f7f9fb;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  background: rgba(4, 22, 39, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

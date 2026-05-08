@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#f7f9fb",
+                    "inverse-primary": "#b7c8de",
+                    "on-surface-variant": "#44474c",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#4f6073",
+                    "on-secondary-container": "#54647a",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#d0e1fb",
+                    "surface-container-low": "#f2f4f6",
+                    "on-error": "#ffffff",
+                    "background": "#f7f9fb",
+                    "on-tertiary-container": "#8391a8",
+                    "on-primary-container": "#8192a7",
+                    "surface-container-highest": "#e0e3e5",
+                    "primary-fixed": "#d2e4fb",
+                    "on-background": "#191c1e",
+                    "tertiary-fixed-dim": "#b9c7e0",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#0b1c30",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#38485a",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#0b1d2d",
+                    "surface-container": "#eceef0",
+                    "secondary-fixed": "#d3e4fe",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "outline": "#74777d",
+                    "tertiary": "#061528",
+                    "primary-container": "#1a2b3c",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#d5e3fd",
+                    "surface-container-high": "#e6e8ea",
+                    "surface": "#f7f9fb",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#191c1e",
+                    "outline-variant": "#c4c6cd",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "primary-fixed-dim": "#b7c8de",
+                    "on-tertiary-fixed-variant": "#3a485c",
+                    "primary": "#041627",
+                    "surface-dim": "#d8dadc",
+                    "tertiary-container": "#1c2a3d",
+                    "secondary": "#505f76",
+                    "inverse-surface": "#2d3133",
+                    "on-tertiary-fixed": "#0d1c2f",
+                    "surface-variant": "#e0e3e5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "16px",
+                    "lg": "40px",
+                    "md": "24px",
+                    "base": "4px",
+                    "xs": "8px",
+                    "container-max": "1280px",
+                    "xl": "64px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-on-surface-variant sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-md md:px-lg max-w-container-max mx-auto h-16">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">PortalHub</div>
+<nav class="hidden md:flex gap-xl h-full items-center">
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-body-md text-body-md cursor-pointer active:opacity-80 transition-colors duration-200" href="#">Portals</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed font-body-md text-body-md cursor-pointer active:opacity-80 transition-colors duration-200" href="#">Resources</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed font-body-md text-body-md cursor-pointer active:opacity-80 transition-colors duration-200" href="#">Support</a>
+</nav>
+<button class="bg-primary text-on-primary px-md py-xs rounded hover:bg-primary-container transition-colors duration-200 font-label-md text-label-md cursor-pointer active:opacity-80">
+                Sign In
+            </button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-xl px-md md:px-lg max-w-container-max mx-auto text-center">
+<h1 class="font-display text-display text-primary mb-sm">Your Central Resource Hub</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto mb-lg">
+                Seamlessly navigate across our ecosystem of specialized tools and documentation platforms.
+            </p>
+</section>
+<!-- Portal Grid Section -->
+<section class="pb-xl px-md md:px-lg max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Portal One -->
+<div class="bg-surface-container-lowest border border-outline-variant p-lg rounded-lg hover:shadow-lg transition-all duration-300 cursor-pointer group hover:border-primary">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">hub</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Portal One</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Access strategic operational data and real-time analytics for comprehensive enterprise oversight.
+                    </p>
+<div class="mt-md flex items-center text-primary font-label-md text-label-md gap-xs">
+                        Enter Portal <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</div>
+<!-- Portal Two -->
+<div class="bg-surface-container-lowest border border-outline-variant p-lg rounded-lg hover:shadow-lg transition-all duration-300 cursor-pointer group hover:border-primary">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">cloud_sync</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Portal Two</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Manage cloud resources and infrastructure with our integrated deployment and monitoring suite.
+                    </p>
+<div class="mt-md flex items-center text-primary font-label-md text-label-md gap-xs">
+                        Enter Portal <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</div>
+<!-- Portal Three -->
+<div class="bg-surface-container-lowest border border-outline-variant p-lg rounded-lg hover:shadow-lg transition-all duration-300 cursor-pointer group hover:border-primary">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Portal Three</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Development documentation and API references for building and scaling custom integrations.
+                    </p>
+<div class="mt-md flex items-center text-primary font-label-md text-label-md gap-xs">
+                        Enter Portal <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Information Section -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-md md:px-lg grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div class="relative rounded-xl overflow-hidden shadow-2xl h-[400px]">
+<img alt="Modern Office" class="w-full h-full object-cover" data-alt="A clean, minimalist high-end corporate office lobby with glass walls and neutral tones. The scene is bathed in soft, natural morning light, emphasizing a bright and professional atmosphere. The design features sleek architectural lines and a palette of muted grays and whites, creating a calm and efficient environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiz7nA05DPg13P2Wky6P_AyvAtcdGc-C90B2_iXgyOKXpgzP19MKoqH5Je-ffcdHBYEJnxuzJ23ZE81j6oGS4NKxskhnuQPigXO1p8oGXors7wdkaseY67HqfWtC0WPjGXuLFg6oBBYjO1VxKsMS4b45RIdS0Dq-SUqJIdiBJSD5l_kSLEuA45qSzvk09yPqc2B7UKfFe3pYK98IycSBfyJDdy65SrfpJ3gpzdEdQtuqCPSniwvWWabtrYaF37MsnNvTiIlvS3nmg"/>
+</div>
+<div class="space-y-md">
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed px-xs py-1 rounded">Ecosystem Update</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Integrated Efficiency</h2>
+<p class="font-body-md text-body-md text-secondary">
+                        Our hub centralizes access to disparate systems, ensuring your team has the tools they need within a single, authenticated environment. Reduce switching costs and improve data integrity with PortalHub.
+                    </p>
+<ul class="space-y-xs">
+<li class="flex items-center gap-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            Unified Single Sign-On (SSO)
+                        </li>
+<li class="flex items-center gap-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            Real-time synchronization across portals
+                        </li>
+<li class="flex items-center gap-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            Enterprise-grade security protocols
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-highest border-t border-outline-variant dark:border-on-surface-variant">
+<div class="flex flex-col md:flex-row justify-between items-center w-full py-md px-md md:px-lg max-w-container-max mx-auto">
+<div class="mb-md md:mb-0">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">PortalHub</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant mt-1">© 2024 PortalHub. All rights reserved.</p>
+</div>
+<div class="flex gap-md">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline cursor-pointer transition-all duration-200" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline cursor-pointer transition-all duration-200" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline cursor-pointer transition-all duration-200" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
