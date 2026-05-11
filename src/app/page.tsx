@@ -11,7 +11,8 @@ import {
   ExternalLink,
   ShieldCheck,
   Zap,
-  Globe
+  Globe,
+  Package
 } from "lucide-react";
 import Link from "next/link";
 
@@ -42,6 +43,15 @@ const portals = [
     color: "from-orange-600 to-red-700",
     link: "#",
     features: ["Trazabilidad de Status", "Control de Despacho", "Servicio Técnico"]
+  },
+  {
+    id: "despacho-almacen",
+    title: "Despacho y Almacén",
+    description: "Gestión integral de inventario, logística de envíos y control de stock en bodegas.",
+    icon: Package,
+    color: "from-amber-600 to-orange-700",
+    link: "#",
+    features: ["Control de Stock", "Guías de Despacho", "Logística de Entrada/Salida"]
   }
 ];
 
@@ -103,7 +113,7 @@ export default function Home() {
 
         {/* Portal Grid */}
         <section className="max-w-7xl mx-auto px-4 pb-24">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {portals.map((portal, index) => (
               <motion.div
                 key={portal.id}
