@@ -32,7 +32,7 @@ const portals = [
     description: "Portal de atención al cliente para seguimiento de tickets y soporte técnico especializado.",
     icon: Headset,
     color: "from-emerald-600 to-teal-700",
-    link: "#",
+    link: "https://posticket.vercel.app/",
     features: ["Tickets de Soporte", "Base de Conocimientos", "Métricas de Nivel de Servicio"]
   },
   {
