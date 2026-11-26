@@ -41,7 +41,7 @@ const portals = [
     description: "Monitorización y trazabilidad del ciclo de vida de terminales desde recepción hasta despacho.",
     icon: Activity,
     color: "from-orange-600 to-red-700",
-    link: "#",
+    link: "https://psa-vatc.vercel.app/",
     features: ["Trazabilidad de Status", "Control de Despacho", "Servicio Técnico"]
   },
   {
