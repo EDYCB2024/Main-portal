@@ -12,7 +12,8 @@ import {
   ShieldCheck,
   Zap,
   Globe,
-  Package
+  Package,
+  Bot
 } from "lucide-react";
 import Link from "next/link";
 
@@ -52,6 +53,15 @@ const portals = [
     color: "from-amber-600 to-orange-700",
     link: "https://despacho-vatc.vercel.app/",
     features: ["Control de Stock", "Guías de Despacho", "Logística de Entrada/Salida"]
+  },
+  {
+    id: "vati",
+    title: "Vati",
+    description: "Asistente virtual inteligente (Chatbot) para consultas operativas, soporte rápido y automatización de atención.",
+    icon: Bot,
+    color: "from-purple-600 to-violet-700",
+    link: "#",
+    features: ["Atención Automatizada 24/7", "Consultas en Tiempo Real", "Asistencia Operativa"]
   }
 ];
 
