@@ -60,7 +60,7 @@ const portals = [
     description: "Asistente virtual inteligente (Chatbot) para consultas operativas, soporte rápido y automatización de atención.",
     icon: Bot,
     color: "from-purple-600 to-violet-700",
-    link: "#",
+    link: "https://vati-vatc.vercel.app/",
     features: ["Atención Automatizada 24/7", "Consultas en Tiempo Real", "Asistencia Operativa"]
   }
 ];
