@@ -23,7 +23,7 @@ const portals = [
     description: "Gestión centralizada de terminales, clientes y aliados comerciales con analítica en tiempo real.",
     icon: BarChart3,
     color: "from-blue-600 to-indigo-700",
-    link: "#",
+    link: "https://poscrm-vatc.vercel.app/",
     features: ["Inventario de Terminales", "Gestión de Clientes", "Reportes de Ventas"]
   },
   {
@@ -50,7 +50,7 @@ const portals = [
     description: "Gestión integral de inventario, logística de envíos y control de stock en bodegas.",
     icon: Package,
     color: "from-amber-600 to-orange-700",
-    link: "#",
+    link: "https://despacho-vatc.vercel.app/",
     features: ["Control de Stock", "Guías de Despacho", "Logística de Entrada/Salida"]
   }
 ];
